@@ -105,7 +105,7 @@ We experimented with and trained several pre-trained models of different archite
 
   
 
-[IMG here of CNN architecture]
+![Screenshot from 2019-08-20 01-21-20](https://user-images.githubusercontent.com/23194592/63305974-30003800-c2e9-11e9-86c1-43c6d5b9e62f.png)
 
   
 
