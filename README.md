@@ -17,6 +17,7 @@ A project by team #sg_speak_german:
 This project was planned and created as a team effort for the Facebook partnered Secure and Private AI challenge by Udacity and utilized the knowledge acquired in this course.
 
 **Short description of our project:**
+
 EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to overlay virtual content according to the recognized facial expression. For example: 
 Depending on the predicted facial expression, EmoAR would display randomized famous quotes about the expression, in AR. (Quotes can motivate people to take positive changes in their life.)
 The live AR camera stream of a mobile device (Android) is input to a segmentation tool (using tiny YOLO) that detects faces in the video frames in real time. 
