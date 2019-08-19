@@ -7,7 +7,7 @@ Team:#sg_speak_german
 # EmoAR – Facial expression recognition and Augmented Reality (AR)
 
 A project by team #sg_speak_german:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berenice Terwey, @Berenice  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Akash Antony, @Akash Antony  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calincan Mircea Ioan, @Calincan Mircea Ioan  
