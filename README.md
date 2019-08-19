@@ -39,8 +39,11 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 5. [Image]
 
 A list of ARCore supported devices:
+
  [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
+
 Get the ARcore Android app EmoAR: [LINK]
+
 Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]
 
 **![](https://lh5.googleusercontent.com/ydjT94bnoaOjZe-YDCVnFh9EJu-Z_wmLvVf3xzvleLcG6eJ_GwRTrqB8XGv-9ghe3epyS6qU7_aCKjTmLZlAJzKIBlRWDt8FQkYI12oOpZBlOTCH45O858APcoE5_Dn5wPxUHKTa)**
