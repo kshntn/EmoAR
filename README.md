@@ -7,11 +7,11 @@ Team:#sg_speak_german
 # EmoAR – Facial expression recognition and Augmented Reality (AR)
 
 A project by team #sg_speak_german:  
-        Mateusz Zatylny, @Mateusz  
-        Berenice Terwey, @Berenice  
-        Akash Antony, @Akash Antony  
-        Calincan Mircea Ioan, @Calincan Mircea Ioan  
-        Joanna Gon, @Joanna Gon  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berenice Terwey, @Berenice  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Akash Antony, @Akash Antony  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calincan Mircea Ioan, @Calincan Mircea Ioan  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joanna Gon, @Joanna Gon  
 
 This project was planned and created as a team effort for the Facebook partnered Secure and Private AI challenge by Udacity and utilized the knowledge acquired in this course.
 
