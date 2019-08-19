@@ -4,7 +4,8 @@ Team:#sg_speak_german
 
 
 
-# EmoAR – Facial expression recognition and Augmented Reality (AR)
+# EmoAR
+## Facial expression recognition and Augmented Reality (AR)
 
 A project by team #sg_speak_german:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
@@ -15,7 +16,7 @@ A project by team #sg_speak_german:
 
 This project was planned and created as a team effort for the Facebook partnered Secure and Private AI challenge by Udacity and utilized the knowledge acquired in this course.
 
-## Short description of our project: ##
+**Short description of our project:**
 EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to overlay virtual content according to the recognized facial expression. For example: 
 Depending on the predicted facial expression, EmoAR would display randomized famous quotes about the expression, in AR. (Quotes can motivate people to take positive changes in their life.)
 The live AR camera stream of a mobile device (Android) is input to a segmentation tool (using tiny YOLO) that detects faces in the video frames in real time. 
@@ -27,7 +28,7 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 ![project-diagram](https://user-images.githubusercontent.com/23194592/63302823-6d12fd00-c2de-11e9-9f0b-9a3cc274b243.jpg)
 
 
-## Impact of EmoAR and its further implications ##
+**Impact of EmoAR and its further implications**
 
  1. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
 2.  A classifier of facial expressions (trained model) will enhance robotic projects related to therapies that help autistic people to socialize. For example: [https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm](https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm)
@@ -45,8 +46,6 @@ A list of ARCore supported devices:
 Get the ARcore Android app EmoAR: [LINK]
 
 Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]
-
-**![](https://lh5.googleusercontent.com/ydjT94bnoaOjZe-YDCVnFh9EJu-Z_wmLvVf3xzvleLcG6eJ_GwRTrqB8XGv-9ghe3epyS6qU7_aCKjTmLZlAJzKIBlRWDt8FQkYI12oOpZBlOTCH45O858APcoE5_Dn5wPxUHKTa)**
 
 **Existing problem:**
 
