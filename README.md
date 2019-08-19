@@ -26,3 +26,147 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 
 ![project-diagram](https://user-images.githubusercontent.com/23194592/63302823-6d12fd00-c2de-11e9-9f0b-9a3cc274b243.jpg)
 
+
+## Impact of EmoAR and its further implications ##
+
+ 1. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
+2.  A classifier of facial expressions (trained model) will enhance robotic projects related to therapies that help autistic people to socialize. For example: [https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm](https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm)
+    
+3. It may also be used as a HR tool and support recruiters in evaluating the overall confidence level of an interviewee by measuring the change in emotions during the interviewee's responses.
+    
+4.  3d models or graphics, artistic content: In social media apps like Instagram, this could be used to suggest emojis, avatars, artistic visual content which suit the detected facial expression, so that the user can take a selfie with overlaid emojis, avatars and/ or artistic visuals.
+
+5. [Image]
+
+A list of ARCore supported devices:
+ [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
+Get the ARcore Android app EmoAR: [LINK]
+Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]
+
+**![](https://lh5.googleusercontent.com/ydjT94bnoaOjZe-YDCVnFh9EJu-Z_wmLvVf3xzvleLcG6eJ_GwRTrqB8XGv-9ghe3epyS6qU7_aCKjTmLZlAJzKIBlRWDt8FQkYI12oOpZBlOTCH45O858APcoE5_Dn5wPxUHKTa)**
+
+**Existing problem:**
+
+OpenCV and AR frameworks like Vuforia, ARKit, ARcore do not work well together, because the input video stream of the AR camera has to be shared with the other frameworks and/ or SDKs.
+
+In our project we need to determine whether and where faces are located in a video frame. With OpenCV techniques, haarcascade etc, this would have been an easy task, but it would prevent us from using the camera stream for the Augmented Reality overlay.
+
+**Our workaround:**
+
+Instead of using OpenCV’s techniques, we access the AR camera stream, we use YOLO to determine a person in a video frame, we crop this AR camera image, convert it to a Bitmap and feed a copy of it as input in our custom Neural Net to determine the facial expression of this face in real time. Most tasks are done asynchronously, the rendering of virtual AR overlays is done by accessing the OpenGL thread.
+
+**Applied learnings:**
+We have not only applied Deep Learning techniques learnt from the Challenge course, but we also did research and applied new learnings:
+
+-   Trained CNNs with PyTorch, Tensorflow/ Keras specifically for mobile applications and web applications
+    
+-   Trained the CNNs by using a custom architecture and alternatively using transfer learning
+    
+-   Model conversion from PyTorch to ONNX to Tensorflow to Tensorflow Lite, and Keras to Tensorflow Lite for use in mobile applications, Unity3d and Android
+    
+-   Development of a REST API by using Flask.
+    
+-   Model deployment to a web app Heroku
+    
+-   Model deployment to Unity3d and Android
+    
+-   Combination of Deep Learning and Augmented Reality (AR) in an Android app. Deep Learning determines the kind of visual AR content.
+    
+-   Sharing of the AR camera feed with other APIs to be able to input the AR camera feed to the CNN, rendering on the OpenGL thread
+
+**Data Description:**
+
+We used the FER2013 dataset from Kaggle for training. [ [https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview) ]
+It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
+A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
+
+**About model training:**
+We experimented with and trained several pre-trained models of different architectures:
+
+-   ResNeXt50,
+    
+-   Inception Resnet v2,
+    
+-   MobileNet v2,
+    
+-   DenseNet121,
+    
+-   ResNet101,
+    
+-   a custom CNN
+    
+
+  
+
+[IMG here of CNN architecture]
+
+  
+
+We experimented with
+
+-   data augmentation, i.e. rotation, horizontal flip
+    
+-   unfreezing some of the last layers
+    
+-   SGD and Adam optimizers,
+    
+-   different learning rates
+    
+-   schedulers – MultiStepLR, ReduceOnPlateau
+    
+-   weight initialization of linear layers
+-  started cleaning the FER dataset
+    
+-   trained with PyTorch for the web app and Keras for Unity3d and Android
+
+**About model conversion:**
+
+Initially, we wanted to deploy to an Augmented Reality app (iOS and Android) via Unity3d using TensorflowSharp to do the inference. Tensorflow -.pb files are supported by Unity3d.
+The conversion workflow: PyTorch → ONNX → Tensorflow -.pb
+We also tried the recently released Inference Engine by Unity3d with the Unity3d Barracuda backend from the ML Agents Toolkit.
+Due to incompatibility issues concerning the Tensorflow versions as well as our models’ architectures with Barracuda, we dropped the app development in Unity3d, the issues led to crashes of Unity.
+We switched to the development in Android (Java) with Tensorflow Lite and ARCore.
+In order to keep the model conversion chain small, we decided for the conversion of a Keras model to Tensorflow Lite. The conversion reduced the model size from 108 to 36 MB.
+
+**About the Android project:**
+We used the following Android APIs and frameworks:
+
+-   android.graphics
+    
+-   android.opengl
+    
+-   com.google.ar.core
+    
+-   org.tensorflow.lite
+
+to name but one
+
+**About the web app project:**
+
+We developed a REST API by using Flask. The image uploaded by the user is input as parameter. After model inference on the server, the prediction is returned as a base64-encoded string to the Heroku web app.
+
+**Next steps, room for improvement:**
+1   Higher accuracy of the model
+    
+2 .  Cleaning the FER 2013 dataset, a small dataset (28.000 grayscale images, 48x48) taken from Kaggle
+    
+				1.  the dataset is unbalanced
+    
+				2.  some images are ambiguous and have mixed emotions.
+    
+				3.  some images are wrong, i.e. only showing loading icons etc.
+    
+				4.  gather RGB color images for a dataset (?)
+    
+
+  
+
+3.  Improve the dataset with more number of classes.
+    
+4.  Use of a dataset of facial landmarks and/ or 3d meshes (3d objects), because currently the app works best, if flat images of faces are used for inference.
+    
+5.  Advanced cropping of the bitmap in order to do inference only with the detected face(s).
+    
+6.  Overlay virtual objects on multiple faces simultaneously. We hope to be able to do this with learnings of the Computer Vision ND ;-)
+    
+7.  Creating models to overlay as described above: emojis for social media apps, text overlays, artistic visual content which suit the detected facial expression
