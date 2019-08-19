@@ -24,5 +24,5 @@ The facial expression of the detected face is determined in real time by using o
 
 Since ARcore is only supported by a small number of Android devices, we also deployed the model to a web app using Flask and Heroku, but without the AR feature. 
 
-![project-diagram](https://user-images.githubusercontent.com/23194592/63302718-2ae9bb80-c2de-11e9-83f2-a549ad3b01bb.jpg)
+![project-diagram](https://user-images.githubusercontent.com/23194592/63302823-6d12fd00-c2de-11e9-9f0b-9a3cc274b243.jpg)
 
