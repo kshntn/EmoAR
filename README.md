@@ -56,6 +56,8 @@ In our project we need to determine whether and where faces are located in a vid
 Instead of using OpenCV’s techniques, we access the AR camera stream, we use YOLO to determine a person in a video frame, we crop this AR camera image, convert it to a Bitmap and feed a copy of it as input in our custom Neural Net to determine the facial expression of this face in real time. Most tasks are done asynchronously, the rendering of virtual AR overlays is done by accessing the OpenGL thread.
 
 **Applied learnings:**
+
+
 We have not only applied Deep Learning techniques learnt from the Challenge course, but we also did research and applied new learnings:
 
 -   Trained CNNs with PyTorch, Tensorflow/ Keras specifically for mobile applications and web applications
@@ -81,6 +83,8 @@ It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of graysc
 A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
 
 **About model training:**
+
+
 We experimented with and trained several pre-trained models of different architectures:
 
 -   ResNeXt50,
@@ -129,6 +133,8 @@ We switched to the development in Android (Java) with Tensorflow Lite and ARCore
 In order to keep the model conversion chain small, we decided for the conversion of a Keras model to Tensorflow Lite. The conversion reduced the model size from 108 to 36 MB.
 
 **About the Android project:**
+
+
 We used the following Android APIs and frameworks:
 
 -   android.graphics
@@ -143,9 +149,12 @@ to name but one
 
 **About the web app project:**
 
+
 We developed a REST API by using Flask. The image uploaded by the user is input as parameter. After model inference on the server, the prediction is returned as a base64-encoded string to the Heroku web app.
 
 **Next steps, room for improvement:**
+
+
 1   Higher accuracy of the model
     
 2 .  Cleaning the FER 2013 dataset, a small dataset (28.000 grayscale images, 48x48) taken from Kaggle
