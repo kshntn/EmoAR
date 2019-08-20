@@ -165,13 +165,13 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
     
 2.   Cleaning the FER 2013 dataset, a small dataset (28.000 grayscale images, 48x48) taken from Kaggle
     
-		i.   the dataset is unbalanced
+			i.   the dataset is unbalanced
     
-		ii.  some images are ambiguous and have mixed emotions.
+			ii.  some images are ambiguous and have mixed emotions.
     
-		iii. some images are wrong, i.e. only showing loading icons etc.
+			iii. some images are wrong, i.e. only showing loading icons etc.
     
-		iv.  gather RGB color images for a dataset
+			iv.  gather RGB color images for a dataset
     
 
   
