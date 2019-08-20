@@ -32,7 +32,7 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 
 **Impact of EmoAR and its further implications**
 
- 1. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
+1. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
 2.  A classifier of facial expressions (trained model) will enhance robotic projects related to therapies that help autistic people to socialize. For example: [https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm](https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm)
     
 3. It may also be used as a HR tool and support recruiters in evaluating the overall confidence level of an interviewee by measuring the change in emotions during the interviewee's responses.
@@ -50,12 +50,12 @@ A list of ARCore supported devices:
 
 
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
-Check if your device supports ARCore, see the link above.
-Install winrar 
-Download both files 
-Both files have to be in same directory
-Then, open part 1 and unpack
-Allow installations of “unknown sources” in the Settings. 
+1.  Check if your device supports ARCore, see the link above.
+2.  Install winrar 
+3.  Download both files 
+4.  Both files have to be in same directory
+5.  Then, open part 1 and unpack
+6.  Allow installations of “unknown sources” in the Settings. 
 
 Demo video below:
 
