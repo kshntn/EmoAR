@@ -48,8 +48,10 @@ A list of ARCore supported devices:
 
 **Get the ARcore Android app EmoAR: [LINK]**
 
+[![thumb3](https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg)](https://www.youtube.com/watch?v=Ezcn6U7Bz2U)
 
 **Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]**
+![web-app-img](https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg)
 
 **Existing problem:**
 
@@ -202,6 +204,3 @@ Problems with using Differential Privacy and Federated Learning in our dataset
 1.  Issues with using Encryption, Federated Learning, CNN and BatchNorm layers in pre-trained models.
 2.  No GPU support for PySyft resulting in longer training times
 
-
-
-[![image](https://user-images.githubusercontent.com/23194592/63356423-09351680-c368-11e9-9cb1-b0bd3dd2275b.png)](https://www.youtube.com/watch?v=osSJhXruEzU)
