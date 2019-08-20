@@ -161,9 +161,9 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
 **Next steps, room for improvement:**
 
 
-1   Higher accuracy of the model
+1.   Higher accuracy of the model
     
-2   Cleaning the FER 2013 dataset, a small dataset (28.000 grayscale images, 48x48) taken from Kaggle
+2.   Cleaning the FER 2013 dataset, a small dataset (28.000 grayscale images, 48x48) taken from Kaggle
     
 				1.  the dataset is unbalanced
     
@@ -176,20 +176,20 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
 
   
 
-3  Improve the dataset with more number of classes.
+3.  Improve the dataset with more number of classes.
     
-4  Use of a dataset of facial landmarks and/ or 3d meshes (3d objects), because currently the app works best, if flat images of faces are used for inference.
+4.  Use of a dataset of facial landmarks and/ or 3d meshes (3d objects), because currently the app works best, if flat images of faces are used for inference.
     
-5  Advanced cropping of the bitmap in order to do inference only with the detected face(s).
+5.  Advanced cropping of the bitmap in order to do inference only with the detected face(s).
     
-6  Overlay virtual objects on multiple faces simultaneously and in real time. We hope to be able to do this properly with learnings of the Computer Vision ND :wink:
+6.  Overlay virtual objects on multiple faces simultaneously and in real time. We hope to be able to do this properly with learnings of the Computer Vision ND :wink:
     
-7  Creating models to overlay as described above: emojis for social media apps, text overlays, artistic visual content which suit the detected facial expression
+7.  Creating models to overlay as described above: emojis for social media apps, text overlays, artistic visual content which suit the detected facial expression
 
 **Application of Secure & Private AI in this project and future prospects:**
 
-1  User's data and training data will not leave the device and individual updates will not be stored in any servers/data centers.
-2  The data for training the models in this project are used taking into consideration any copyright and privacy  issues.
+1.  User's data and training data will not leave the device and individual updates will not be stored in any servers/data centers.
+2.  The data for training the models in this project are used taking into consideration any copyright and privacy  issues.
 
 For future release and improvement of our model with new high quality private images, we plan to incorporate federated learning and encryption in order to secure the prediction of our classification models:
 
@@ -199,6 +199,6 @@ This way, Federated Learning enables end devices to collaboratively learn a comm
 Why we have not applied PySyft yet: 
 
 Problems with using Differential Privacy and Federated Learning in our dataset
-1  Issues with using Encryption, Federated Learning, CNN and BatchNorm layers in pre-trained models.
-2  No GPU support for PySyft resulting in longer training times
+1.  Issues with using Encryption, Federated Learning, CNN and BatchNorm layers in pre-trained models.
+2.  No GPU support for PySyft resulting in longer training times
 
