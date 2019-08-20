@@ -204,5 +204,4 @@ Problems with using Differential Privacy and Federated Learning in our dataset
 
 
 
-[![IMAGE ALT TEXT HERE](![image](https://user-images.githubusercontent.com/23194592/63356423-09351680-c368-11e9-9cb1-b0bd3dd2275b.png)
-)](https://www.youtube.com/watch?v=osSJhXruEzU)
+[![IMAGE ALT TEXT HERE](![image](https://user-images.githubusercontent.com/23194592/63356423-09351680-c368-11e9-9cb1-b0bd3dd2275b.png)](https://www.youtube.com/watch?v=osSJhXruEzU)
