@@ -1,4 +1,5 @@
 
+
 Repository for Facial Emotion Recognition Project for Udacity Secure and Private AI Challenge Scholarship 
 Team:#sg_speak_german
 
@@ -45,9 +46,8 @@ A list of ARCore supported devices:
 
  [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 
-Get the ARcore Android app EmoAR: [LINK]
-
-Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]
+**Get the ARcore Android app EmoAR: [LINK]
+Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]**
 
 **Existing problem:**
 
@@ -180,6 +180,6 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
     
 5.  Advanced cropping of the bitmap in order to do inference only with the detected face(s).
     
-6.  Overlay virtual objects on multiple faces simultaneously. We hope to be able to do this with learnings of the Computer Vision ND ;-)
+6.  Overlay virtual objects on multiple faces simultaneously. We hope to be able to do this with learnings of the Computer Vision ND :wink:
     
 7.  Creating models to overlay as described above: emojis for social media apps, text overlays, artistic visual content which suit the detected facial expression
