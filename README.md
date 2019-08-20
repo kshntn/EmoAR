@@ -214,5 +214,6 @@ Why we have not applied PySyft yet:
 
 Problems with using Differential Privacy and Federated Learning in our dataset
 1.  Issues with using Encryption, Federated Learning, CNN and BatchNorm layers in pre-trained models.
-2.  No GPU support for PySyft resulting in longer training times
+2.  No GPU support for PySyft resulting in longer training times[ [https://github.com/OpenMined/PySyft/issues/1893](https://github.com/OpenMined/PySyft/issues/1893) ]
+
 
