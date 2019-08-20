@@ -66,7 +66,7 @@ Demo video below:
 Click below to test our web app
 
 
-<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="800" height="800" border="10"/></a>
+<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="500" height="500" border="10"/></a>
 
 **Existing problem:**
 
@@ -149,7 +149,7 @@ We experimented with
 **About model conversion:**
 
 Initially, we wanted to deploy to an Augmented Reality app (iOS and Android) via Unity3d using TensorflowSharp to do the inference. Tensorflow -.pb files are supported by Unity3d.
-The conversion workflow: PyTorch → ONNX → Tensorflow -.pb
+The conversion chain: PyTorch → ONNX → Tensorflow -.pb
 We also tried the recently released Inference Engine by Unity3d with the Unity3d Barracuda backend from the ML Agents Toolkit.
 Due to incompatibility issues concerning the Tensorflow versions as well as our models’ architectures with Barracuda, we dropped the app development in Unity3d, the issues led to crashes of Unity.
 We switched to the development in Android (Java) with Tensorflow Lite and ARCore.
