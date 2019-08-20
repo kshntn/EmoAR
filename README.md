@@ -169,7 +169,7 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
     
 				3.  some images are wrong, i.e. only showing loading icons etc.
     
-				4.  gather RGB color images for a dataset (?)
+				4.  gather RGB color images for a dataset
     
 
   
