@@ -42,15 +42,13 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 ![Android-drafts](https://user-images.githubusercontent.com/23194592/63307737-c5062f80-c2ef-11e9-8cc6-d878bf6bd1b4.jpg)
 
 
-A list of ARCore supported devices:
 
- [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 
 **Get the ARcore Android app EmoAR:**[Download apk](https://github.com/kshntn/EmoAR/tree/master/apk)
 
 
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
-1.  Check if your device supports ARCore, see the link above.
+1.  Check if your device supports ARCore. A list of ARCore supported devices: [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 2.  Install winrar 
 3.  Download both files 
 4.  Both files have to be in same directory
@@ -63,8 +61,12 @@ Demo video below:
 <a href="https://www.youtube.com/watch?v=Ezcn6U7Bz2U" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
-**Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]**
-![web-app-img](https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg)
+**Go to the web app EmoAR:**
+
+Click below to test our web app
+
+
+<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 **Existing problem:**
 
