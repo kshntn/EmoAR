@@ -66,7 +66,7 @@ Demo video below:
 Click below to test our web app
 
 
-<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="800" height="800" border="10"/></a>
 
 **Existing problem:**
 
