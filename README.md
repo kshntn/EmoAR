@@ -55,7 +55,7 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 5.  Then, open part 1 and unpack
 6.  Allow installations of “unknown sources” in the Settings. 
 
-Demo video below:[https://www.youtube.com/watch?v=Ezcn6U7Bz2U]
+**Demo video below:** [https://www.youtube.com/watch?v=Ezcn6U7Bz2U]
 
 
 <a href="https://www.youtube.com/watch?v=Ezcn6U7Bz2U" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
