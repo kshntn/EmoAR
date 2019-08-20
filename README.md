@@ -46,7 +46,7 @@ A list of ARCore supported devices:
 
  [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 
-**Get the ARcore Android app EmoAR: [LINK]**
+**Get the ARcore Android app EmoAR:**[Download apk](https://github.com/kshntn/EmoAR/tree/master/apk)
 
 
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
