@@ -48,7 +48,8 @@ A list of ARCore supported devices:
 
 **Get the ARcore Android app EmoAR: [LINK]**
 
-[![thumb3](https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg)](https://www.youtube.com/watch?v=Ezcn6U7Bz2U)
+<a href="https://www.youtube.com/watch?v=Ezcn6U7Bz2U" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 
 **Go to the web app EmoAR: [[https://emoar.herokuapp.com/](https://emoar.herokuapp.com/)]**
 ![web-app-img](https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg)
