@@ -182,7 +182,7 @@ We developed a REST API by using Flask. The image uploaded by the user is input 
     
 5.  Advanced cropping of the bitmap in order to do inference only with the detected face(s).
     
-6.  Overlay virtual objects on multiple faces simultaneously and in real time. We hope to be able to do this properly with learnings of the Computer Vision ND :wink:
+6.  Overlay virtual objects on multiple faces simultaneously and in real time. We hope to be able to do this properly with learnings of the Computer Vision ND :wink: .
     
 7.  Creating models to overlay as described above: emojis for social media apps, text overlays, artistic visual content which suit the detected facial expression
 
@@ -202,3 +202,6 @@ Problems with using Differential Privacy and Federated Learning in our dataset
 1.  Issues with using Encryption, Federated Learning, CNN and BatchNorm layers in pre-trained models.
 2.  No GPU support for PySyft resulting in longer training times
 
+
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=osSJhXruEzU)
