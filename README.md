@@ -48,6 +48,15 @@ A list of ARCore supported devices:
 
 **Get the ARcore Android app EmoAR: [LINK]**
 
+
+Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
+Check if your device supports ARCore, see the link above.
+Install winrar 
+Download both files 
+Both files have to be in same directory
+Then, open part 1 and unpack
+Allow installations of “unknown sources” in the Settings. 
+
 Demo video below:
 
 
