@@ -1,19 +1,18 @@
 
 
-Repository for Facial Emotion Recognition Project for Udacity Secure and Private AI Challenge Scholarship 
-Team:#sg_speak_german
-
+Repository for Facial Emotion Recognition Project for the PyTorch Hackathon September 2019
+Team: PyTorch Musketeers
 
 
 # EmoAR
-## Facial expression recognition and Augmented Reality (AR)
+## Facial Expression Recognition and Augmented Reality (AR)
 
 A project by team PyTorch Musketeers:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berenice Terwey, @Berenice  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Akash Antony, @Akash Antony  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calincan Mircea Ioan, @Calincan Mircea Ioan  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joanna Gon, @Joanna Gon  
+
 
 **Short description of our project:**
 
