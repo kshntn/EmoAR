@@ -15,7 +15,8 @@ A project by team PyTorch Musketeers:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calincan Mircea Ioan, @Calincan Mircea Ioan  
 
 
-**Table of Content: **
+
+**Table of Content:**
 
 - Short project description
 - Impact of EmoAR and its further implications
