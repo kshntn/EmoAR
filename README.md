@@ -48,6 +48,7 @@ We took a look at Spark AR, but unfortunately have not yet found a function/ met
 **Get the ARcore Android app EmoAR:**[Download apk](https://github.com/kshntn/EmoAR/tree/master/apk)
 
 [**TODO** add the correct link to the -.apk]
+
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
 1.  Check if your device supports ARCore. A list of ARCore supported devices: [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 2.  Install winrar 
@@ -65,10 +66,12 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 
 **Go to the web app EmoAR:** [https://emoar.herokuapp.com/]
 
+As just a limited number of Android devices support ARCore, we also developed a web app using Flask and Heroku. 
+
 Click below to test our web app
 
 
-<a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="750" height="400" border="10" /></a>
+<a href="https://emoar.herokuapp.com/" target="_blank"><img src="images/app-web-flow.png" alt="EmoAR web app" width="750" height="400" border="10" /></a>
 
 
 
@@ -109,6 +112,15 @@ We used the FER2013 dataset from Kaggle for training. [ [https://www.kaggle.com/
 It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
 A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
 
+Unfortunately, 	
+
+			i.   the dataset is unbalanced
+    
+			ii.  some images are ambiguous and have mixed emotions.
+    
+			iii. some images are wrong, i.e. only showing loading icons etc.
+    
+    
 
 
 **About model training:**
@@ -133,7 +145,7 @@ We experimented with and trained several pre-trained models of different archite
 
   
 
-![Screenshot from 2019-08-20 01-21-20](https://user-images.githubusercontent.com/23194592/63305974-30003800-c2e9-11e9-86c1-43c6d5b9e62f.png)
+![images/tensorboard.png](images/tensorboard.png)
 
   
 
@@ -154,6 +166,9 @@ We experimented with
     
 -   trained with PyTorch for the web app 
 -  converted our best PyTorch models to Tensorflow Lite
+
+
+![images/pytorch-hyperparam.png](images/pytorch-hyperparam.png)
 
 
 **About model conversion:**
@@ -185,6 +200,7 @@ to name but one
 
 To overlay and to place virtual 3d content with ARCore, ARPoint Clouds and ARPlanes are currently used. Learn about a better approach in the last section “Next steps. How to improve the project”
 
+![images/app-android-aranchor.png](images/app-android-aranchor.png)
 
 
 **About the web app project:**
@@ -210,7 +226,10 @@ Heroku is a Platform as a service (PaaS) which enables developers to build, run,
 	6.	Upload the flask script along with the trained model on Heroku
 	
 
-![web-app1.png](web-app1.png)
+![images/web-app1.png](images/web-app1.png)
+
+![images/further-steps.png](images/further-steps.png)
+
 
 
 **Next steps. How to improve the project:**
