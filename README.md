@@ -1,6 +1,7 @@
 
 
 Repository for Facial Emotion Recognition Project for the PyTorch Hackathon September 2019
+
 Team: PyTorch Musketeers
 
 
@@ -188,8 +189,29 @@ To overlay and to place virtual 3d content with ARCore, ARPoint Clouds and ARPla
 
 **About the web app project:**
 
-
 We developed a REST API by using Flask. The image uploaded by the user is input as parameter. After model inference on the server, the prediction is returned as a base64-encoded string to the Heroku web app.
+
+Flask is a Python micro-framework that is used to develop web applications. Is a lightweight Web Server Gateway Interface application framework. It is designed to make getting started quick and easily, with the ability to scale up to complex applications.
+
+Heroku is a Platform as a service (PaaS) which enables developers to build, run, and operate applications entirely in the cloud. Heroku abstracts us from dealing with servers. All we have to do is sign up, download a few tools and then upload our code to the platform effortlessly. 
+
+*Steps to be followed to deploy the Pytorch model to a web app:*
+
+	1.	Save the trained model object - in .pt format
+	
+	2.	Create a Flask environment that will have an API endpoint which would encapsulate our trained model, and enable it to receive inputs (features) through GET requests over HTTP/HTTPS and then return the prediction .
+	
+	3.	import torch, torchvision import models, from PIL import Image,  import torchvision.transforms as transforms
+	
+	4.	Normalise the image tensor with the required mean and standard deviation values
+	
+	5.	Use transforms from torchvision library and build a transform pipeline, which transforms our images as required.
+	
+	6.	Upload the flask script along with the trained model on Heroku
+	
+
+![Screenshot from 2019-08-20 01-21-20](https://user-images.githubusercontent.com/23194592/63305974-30003800-c2e9-11e9-86c1-43c6d5b9e62f.png)
+
 
 **Next steps. How to improve the project:**
 
