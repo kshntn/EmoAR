@@ -17,8 +17,9 @@ A project by team PyTorch Musketeers:
 
 **Short description of our project:**
 
-EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to superimpose virtual content according to the recognized facial expression. For example: 
-Depending on the predicted facial expression, EmoAR would overlay randomized famous quotes about the expression, in AR. (Quotes can motivate people to take positive changes in their life.)
+EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to superimpose virtual content according to the recognized facial expression. 
+For example: Depending on the predicted facial expression, EmoAR would overlay randomized famous quotes about the expression, in AR. (Quotes can motivate people to take positive changes in their life.)
+
 The live AR camera stream of a mobile device (Android) is input to a segmentation tool (using tiny YOLO) that detects faces in the video frames in real time. 
 The detected areas with a face are fed into a model that was trained on the public FER dataset (from a Kaggle competition 2013). 
 The facial expression of the detected face is determined in real time by using our model trained with PyTorch and converted to Tensorflow Lite for use in Android. Depending on the model prediction (the output result), different virtual content overlays the face. This virtual augmentation of a face is done with Augmented Reality (ARCore). 
@@ -69,6 +70,8 @@ Click below to test our web app
 
 <a href="https://emoar.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371155-d7ca4400-c383-11e9-9699-e4289ea01667.jpg" alt="IMAGE ALT TEXT HERE" width="750" height="400" border="10" /></a>
 
+
+
 **Existing problem:**
 
 OpenCV and AR frameworks like Vuforia, ARKit, ARcore do not work well together, because the input video stream of the AR camera has to be shared with the other frameworks and/ or SDKs.
@@ -78,6 +81,7 @@ In our project we need to determine whether and where faces are located in a vid
 **Our workaround:**
 
 Instead of using OpenCV’s techniques, we access the AR camera stream, we use YOLO to determine a person in a video frame, we crop this AR camera image, convert it to a Bitmap and feed a copy of it as input in our custom PyTorch model to determine the facial expression of this face in real time. Most tasks are done asynchronously, the rendering of virtual AR overlays is done by accessing the OpenGL thread.
+
 
 **How we incorporated PyTorch:**
 
@@ -97,11 +101,15 @@ Instead of using OpenCV’s techniques, we access the AR camera stream, we use Y
     
 -   Sharing of the AR camera feed with other APIs to be able to input the AR camera feed to the CNN, rendering on the OpenGL thread
 
+
+
 **Data Description:**
 
 We used the FER2013 dataset from Kaggle for training. [ [https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview) ]
 It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
 A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
+
+
 
 **About model training:**
 
@@ -152,8 +160,10 @@ Initially, we wanted to deploy to an Augmented Reality app (iOS and Android) via
 The conversion chain is as follows: PyTorch → ONNX → Tensorflow -.pb  
 We also tried the recently released Inference Engine by Unity3d with the Unity3d Barracuda backend from the ML Agents Toolkit.
 Due to incompatibility issues concerning the Tensorflow versions as well as our models’ architectures with Barracuda, we dropped the app development in Unity3d, the issues led to crashes of Unity (as of August 2019). 
+
 We switched to the development in Android (Java) with Tensorflow Lite and ARCore. 
 The conversion chain for use in Android is as follows: PyTorch → ONNX → Tensorflow -.pb  → Tensorflow Lite. The conversion to Tensorflow Lite reduced the model size by 66% to only 33% of the model size. 
+
 An alternative conversion would be PyTorch to Caffe2 for use in Android, but the team's knowledge of C++ has become a bit too rusty. 
 
 **About the Android project:**
