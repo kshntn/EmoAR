@@ -48,6 +48,7 @@ We took a look at Spark AR, but unfortunately have not yet found a function/ met
 **Get the ARcore Android app EmoAR:**[Download apk](https://github.com/kshntn/EmoAR/tree/master/apk)
 
 [**TODO** add the correct link to the -.apk]
+
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
 1.  Check if your device supports ARCore. A list of ARCore supported devices: [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 2.  Install winrar 
@@ -68,7 +69,7 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 Click below to test our web app
 
 
-<a href="https://emoar.herokuapp.com/" target="_blank"><img src="images/app-web-flow.png" alt="web app graphic" width="750" height="400" border="10" /></a>
+<a href="https://emoar.herokuapp.com/" target="_blank"><img src="images/app-web-flow.png" alt="EmoAR web app" width="750" height="400" border="10" /></a>
 
 
 
@@ -159,7 +160,6 @@ We experimented with
 ![images/pytorch-hyperparam.png](images/pytorch-hyperparam.png)
 
 
-
 **About model conversion:**
 
 Initially, we wanted to deploy to an Augmented Reality app (iOS and Android) via Unity3d using TensorflowSharp to do the inference. (Tensorflow -.pb files are supported by Unity3d.)
@@ -188,6 +188,7 @@ We used the following Android APIs and frameworks:
 to name but one
 
 To overlay and to place virtual 3d content with ARCore, ARPoint Clouds and ARPlanes are currently used. Learn about a better approach in the last section “Next steps. How to improve the project”
+
 ![images/app-android-aranchor.png](images/app-android-aranchor.png)
 
 
@@ -217,6 +218,8 @@ Heroku is a Platform as a service (PaaS) which enables developers to build, run,
 ![images/web-app1.png](images/web-app1.png)
 
 ![images/further-steps.png](images/further-steps.png)
+
+
 
 **Next steps. How to improve the project:**
 
