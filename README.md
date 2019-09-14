@@ -15,6 +15,24 @@ A project by team PyTorch Musketeers:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calincan Mircea Ioan, @Calincan Mircea Ioan  
 
 
+
+**Table of Content:**
+
+- Short project description
+- Impact of EmoAR and its further implications
+- Where to get the EmoAR apps: Android AR app, Web app
+- Existing problem
+- Our workaround
+- How we built EmoAR with PyTorch
+- Dataset Description
+- About model training
+- About model conversion
+- About the Android project
+- About the Web App project
+- Next steps. How to improve the project?
+
+
+
 **Short description of our project:**
 
 EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to superimpose virtual content according to the recognized facial expression. 
@@ -112,7 +130,7 @@ We used the FER2013 dataset from Kaggle for training. [ [https://www.kaggle.com/
 It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
 A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
 
-Unfortunately, 	
+Dataset issues we encountered: 	
 
 			i.   the dataset is unbalanced
     
@@ -121,6 +139,7 @@ Unfortunately,
 			iii. some images are wrong, i.e. only showing loading icons etc.
     
     
+![images/dataset-issues.png](images/dataset-issues.png)
 
 
 **About model training:**
