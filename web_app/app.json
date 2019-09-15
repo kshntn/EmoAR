@@ -1,0 +1,5 @@
+{
+	"name": "Pytorch Face emotions",
+	"description": "emotions Classifier built using Pytorch",
+	"keywords":["python", "flask", "pytorch", "bootstrap"]
+}

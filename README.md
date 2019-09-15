@@ -8,6 +8,8 @@ Team: PyTorch Musketeers
 # EmoAR
 ## Facial Expression Recognition and Augmented Reality (AR)
 
+**EmoAR is a mobile AR app that aims to recognize facial expression in real time and to superimpose virtual content according to the recognized facial expression. We also created a web app (without AR).**
+
 A project by team PyTorch Musketeers:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mateusz Zatylny, @Mateusz  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berenice Terwey, @Berenice  
@@ -16,8 +18,10 @@ A project by team PyTorch Musketeers:
 
 
 
+
 **Table of Content:**
 
+- Watch the full video presentation
 - Short project description
 - Impact of EmoAR and its further implications
 - Where to get the EmoAR apps: Android AR app, Web app
@@ -31,7 +35,11 @@ A project by team PyTorch Musketeers:
 - About the Web App project
 - Next steps. How to improve the project?
 
+**Full video presentation (30 min):**
+https://youtu.be/EaHArrEaEaQ?t=105
 
+
+<a href="https://youtu.be/EaHArrEaEaQ?t=105" target="_blank"><img src="images/emoar-slide1.png" alt="thumb EmoAR" width="240" height="180" border="10" /></a>
 
 **Short description of our project:**
 
