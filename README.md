@@ -209,6 +209,7 @@ We switched to the development in Android (Java) with Tensorflow Lite and ARCore
 The conversion chain for use in Android is as follows: PyTorch → ONNX → Tensorflow -.pb  → Tensorflow Lite. The conversion to Tensorflow Lite reduced the model size by 66% to only 33% of the model size. 
 
 An alternative conversion would be PyTorch to Caffe2 for use in Android (but the team's knowledge of C++ has become a bit too rusty) or the conversion from Keras to Tensorflow Lite (which we tried for the Android app, too, as this is a quite straight forward approach.)
+![images/conversionPytorchOnnx.png](images/conversionPytorchOnnx.png)
 
 
 **About the Android project:**
