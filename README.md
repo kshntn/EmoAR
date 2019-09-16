@@ -89,10 +89,10 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 11. Then, point the camera to a face, slowly move it around the face and wait until a virtual 3d arrow is positioned near the face. Alternatively, you may also tap on a feature point to place that arrow manually. 
 12. After a few moments, the recognized facial expression should appear as texture on the 3d arrow and change according to the model result. It may take a bit time until the new texture is rendered.
 
-**Demo video below:** [https://youtu.be/R7-69Vf8r_4]
+**Demo video below:** [https://youtu.be/R7-69Vf8r_4?t=120]
 
 
-<a href="https://www.youtube.com/watch?v=Ezcn6U7Bz2U" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/64973828-03b9e600-d8ac-11e9-8ab8-c4204558024e.png" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/R7-69Vf8r_4?t=120" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/64973828-03b9e600-d8ac-11e9-8ab8-c4204558024e.png" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 **Go to the web app EmoAR:** [https://emoar1.herokuapp.com/]
