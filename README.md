@@ -70,8 +70,6 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 
 **Get the ARcore Android app EmoAR:**[Download apk](https://github.com/kshntn/EmoAR/tree/master/apk)
 
-[**TODO** add the correct link to the -.apk]
-
 Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split it in 2 file pieces. How to install the Android app:
 1.  Check if your device supports ARCore. A list of ARCore supported devices: [https://developers.google.com/ar/discover/supported-devices](https://developers.google.com/ar/discover/supported-devices)
 2.  Install winrar 
@@ -82,7 +80,7 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 7. Check if your device supports ARCore. A list of ARCore supported devices: https://developers.google.com/ar/discover/supported-devices
 8. Install the ARCore package from Google Play
 9. Open the EmoAR app, grant camera access 
-10. Slowly move the camera and gather ARPlanes (white grids) and AR feature points (cyan blue points)
+10. Slowly move the camera and gather ARPlanes (white grids) and AR feature points (cyan blue points). Pay attention to an evenly lit environment and avoid reflections on surfaces. 
 11. Then, point the camera to a face, slowly move it around the face and wait until a virtual 3d arrow is positioned near the face. Alternatively, you may also tap on a feature point to place that arrow manually. 
 12. After a few moments, the recognized facial expression should appear as texture on the 3d arrow and change according to the model result. It may take a bit time until the new texture is rendered.
 
@@ -96,7 +94,7 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 
 As just a limited number of Android devices support ARCore, we also developed a web app using Flask and Heroku. 
 
-Click below to test our web app
+Click below to test our web app: 
 
 
 <a href="https://emoar1.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/64959229-fe9b6d80-d890-11e9-8297-ba4798ee3e40.png" alt="EmoAR web app" width="750" height="400" border="10" /></a>
@@ -136,7 +134,10 @@ Instead of using OpenCV’s techniques, we access the AR camera stream, we use Y
 **Data Description:**
 
 We used the FER2013 dataset from Kaggle for training. [ [https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview) ]
-It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
+It was prepared by Pierre-Luc Carrier and Aaron Courville and consists of grayscale facial images of size 48x48 px. The faces are segregated and categorized into 7 classes: 
+
+0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
+
 A total of 28,709 examples was used for training the models, which were further validated with 3,589 examples.
 
 Dataset issues we encountered: 	
