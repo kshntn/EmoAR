@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.avkterwey.emoar">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- "AR Required" apps must declare minSdkVersion ≥ 24 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Indicates that the app requires ARCore ("AR Required"). Ensures the app is
+         visible only in the Google Play Store on devices that support ARCore.
+    -->
+    <uses-feature android:name="android.hardware.camera.ar" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/activity_name_classification"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Indicates that the app requires ARCore ("AR Required"). Causes the Google
+             Play Store to download and install Google Play Services for AR when the
+             app is installed.
+        -->
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+        <activity
+            android:name="de.avkterwey.emoar.ArActivity"
+            android:label="@string/activity_name_classification"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
