@@ -39,7 +39,7 @@ A project by team PyTorch Musketeers:
 https://youtu.be/EaHArrEaEaQ?t=105
 
 
-<a href="https://youtu.be/EaHArrEaEaQ?t=105" target="_blank"><img src="images/emoar-slide1.png" alt="thumb EmoAR" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/EaHArrEaEaQ?t=105" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/64959478-82555a00-d891-11e9-8558-0e7d1b034598.png" alt="thumb EmoAR" width="240" height="180" border="10" /></a>
 
 **Short description of our project:**
 
@@ -89,21 +89,20 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 11. Then, point the camera to a face, slowly move it around the face and wait until a virtual 3d arrow is positioned near the face. Alternatively, you may also tap on a feature point to place that arrow manually. 
 12. After a few moments, the recognized facial expression should appear as texture on the 3d arrow and change according to the model result. It may take a bit time until the new texture is rendered.
 
-[**TODO** add the correct demo video link]
-**Demo video below:** [https://www.youtube.com/watch?v=Ezcn6U7Bz2U]
+**Demo video below:** [https://youtu.be/R7-69Vf8r_4?t=71]
 
 
 <a href="https://www.youtube.com/watch?v=Ezcn6U7Bz2U" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/63371074-abaec300-c383-11e9-8cb3-c22bcfdd14e0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
-**Go to the web app EmoAR:** [https://emoar.herokuapp.com/]
+**Go to the web app EmoAR:** [https://emoar1.herokuapp.com/]
 
 As just a limited number of Android devices support ARCore, we also developed a web app using Flask and Heroku. 
 
 Click below to test our web app
 
 
-<a href="https://emoar.herokuapp.com/" target="_blank"><img src="images/app-web-flow.png" alt="EmoAR web app" width="750" height="400" border="10" /></a>
+<a href="https://emoar1.herokuapp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/23194592/64959229-fe9b6d80-d890-11e9-8297-ba4798ee3e40.png" alt="EmoAR web app" width="750" height="400" border="10" /></a>
 
 
 
@@ -153,7 +152,7 @@ Dataset issues we encountered:
 			iii. some images are wrong, i.e. only showing loading icons etc.
     
     
-![images/dataset-issues.png](images/dataset-issues.png)
+![dataset-issues](https://user-images.githubusercontent.com/23194592/64959356-428e7280-d891-11e9-8fce-6af6bd2b2193.png)
 
 
 **About model training:**
@@ -178,7 +177,7 @@ We experimented with and trained several pre-trained models of different archite
 
   
 
-![images/tensorboard.png](images/tensorboard.png)
+![tensorboard](https://user-images.githubusercontent.com/23194592/64959643-dfe9a680-d891-11e9-932c-51f9b0b0875a.png)
 
   
 
@@ -201,7 +200,7 @@ We experimented with
 -  converted our best PyTorch models to Tensorflow Lite
 
 
-![images/pytorch-hyperparam.png](images/pytorch-hyperparam.png)
+![pytorch-hyperparam](https://user-images.githubusercontent.com/23194592/64959600-c6e0f580-d891-11e9-8459-2c48d4552ea0.png)
 
 
 **About model conversion:**
@@ -215,7 +214,7 @@ We switched to the development in Android (Java) with Tensorflow Lite and ARCore
 The conversion chain for use in Android is as follows: PyTorch → ONNX → Tensorflow -.pb  → Tensorflow Lite. The conversion to Tensorflow Lite reduced the model size by 66% to only 33% of the model size. 
 
 An alternative conversion would be PyTorch to Caffe2 for use in Android (but the team's knowledge of C++ has become a bit too rusty) or the conversion from Keras to Tensorflow Lite (which we tried for the Android app, too, as this is a quite straight forward approach.)
-![images/conversionPytorchOnnx.png](images/conversionPytorchOnnx.png)
+![conversionPytorchOnnx](https://user-images.githubusercontent.com/23194592/64959293-22f74a00-d891-11e9-9d4f-b3600d30042b.png)
 
 
 **About the Android project:**
@@ -234,7 +233,7 @@ to name but one
 
 To overlay and to place virtual 3d content with ARCore, ARPoint Clouds and ARPlanes are currently used. Learn about a better approach in the last section “Next steps. How to improve the project”
 
-![images/app-android-aranchor.png](images/app-android-aranchor.png)
+![app-android-aranchor](https://user-images.githubusercontent.com/23194592/64958185-cbf07580-d88e-11e9-9cb1-786594a0a507.png)
 
 
 **About the web app project:**
@@ -260,9 +259,9 @@ Heroku is a Platform as a service (PaaS) which enables developers to build, run,
 	6.	Upload the flask script along with the trained model on Heroku
 	
 
-![images/web-app1.png](images/web-app1.png)
+![web-app1](https://user-images.githubusercontent.com/23194592/64959752-19221680-d892-11e9-8aa2-c9ec488026ee.png)
 
-![images/further-steps.png](images/further-steps.png)
+![further-steps](https://user-images.githubusercontent.com/23194592/64959529-a3b64600-d891-11e9-99a7-6e04b6d88be9.png)
 
 
 
