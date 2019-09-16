@@ -46,10 +46,7 @@ https://youtu.be/EaHArrEaEaQ?t=105
 EmoAR is a mobile AR application (mobile device with ARCore support is required) that aims to recognize human facial expression in real time and to superimpose virtual content according to the recognized facial expression. 
 For example: Depending on the predicted facial expression, EmoAR would overlay randomized famous quotes about the expression, in AR. (Quotes can motivate people to take positive changes in their life.)
 
-The live AR camera stream of a mobile device (Android) is input to a segmentation tool (using tiny YOLO) that detects faces in the video frames in real time. 
-The detected areas with a face are fed into a model that was trained on the public FER dataset (from a Kaggle competition 2013). 
-The facial expression of the detected face is determined in real time by using our model trained with PyTorch and converted to Tensorflow Lite for use in Android. Depending on the model prediction (the output result), different virtual content overlays the face. This virtual augmentation of a face is done with Augmented Reality (ARCore). 
-
+The live AR camera stream of a mobile device (Android) is input to a segmentation tool (using tiny YOLO) that detects faces in the video frames in real time. The detected areas with a face are fed into a model that was trained on the public FER dataset (from a Kaggle competition 2013). The facial expression of the detected face is determined in real time by using our model trained with PyTorch and converted to Tensorflow Lite for use in Android. Depending on the model prediction (the output result), different virtual content overlays the face. This virtual augmentation of a face is done with Augmented Reality (ARCore).
 Since ARcore is only supported by a small number of Android devices, we also deployed the PyTorch model to a web app using Flask and Heroku, but without the AR feature. 
 
 ![project-diagram](https://user-images.githubusercontent.com/23194592/63302823-6d12fd00-c2de-11e9-9f0b-9a3cc274b243.jpg)
@@ -57,14 +54,14 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 
 **Impact of EmoAR and its further implications**
 
-1. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
+1. In social media apps, this could be used to suggest emojis, avatars, artistic visual content, 3D models which suit the detected facial expression, so that the user can take a selfie or videos with superimposed emojis, avatars and/ or artistic visuals as AR filter. (We took a look at the current beta version of an AR creation tool for social media platforms, but unfortunately have not yet found a function/method in the scripting API to access the CameraTexture by code in order to send these camera images via a web request to our inference tool that would return the PyTorch model prediction to the social media app where we would suggest and/or overlay specific AR filters.)
 
-2.  A classifier of facial expressions (trained model) will enhance robotic projects related to therapies that help autistic people to socialize. For example: [How Kaspar the robot is helping autistic students to socialise](https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm)
-    
-3. It may also be used as a HR tool and support recruiters in evaluating the overall confidence level of an interviewee by measuring the change in emotions during the interviewee's responses in real time.
-    
-4.  3d models or graphics, artistic content: In social media apps like Instagram and Facebook, this could be used to suggest emojis, avatars, artistic visual content which suit the detected facial expression, so that the user can take a selfie or videos with superimposed emojis, avatars and/ or artistic visuals as AR filter. 
-We took a look at Spark AR, but unfortunately have not yet found a function/ method to access the CameraTexture by code in order to send these camera images via a web request to our inference tool that would return the PyTorch model prediction to a Spark AR application. 
+2. Text overlays displaying the detected facial expression: EmoAR might help people with Asperger syndrome and autism in learning about the expression of a face.
+
+3. A classifier of facial expressions (trained model) will enhance robotic projects related to therapies that help autistic people to socialize. For example: [How Kaspar the robot is helping autistic students to socialise](https://www.abc.net.au/news/2018-06-05/the-creepy-looking-robot-teaching-kids-social-skills/9832530?pfmredir=sm)
+
+4. It may also be used as a HR tool and support recruiters in evaluating the overall confidence level of an interviewee by measuring the change in emotions during the interviewee's responses in real time.
+
 
 ![Android-drafts](https://user-images.githubusercontent.com/23194592/64972151-15e65500-d8a9-11e9-8d9a-b0d6503cfb17.jpg)
 
@@ -119,22 +116,21 @@ Instead of using OpenCV’s techniques, we access the AR camera stream, we use Y
 
 **How we built EmoAR with PyTorch:**
 
--   Trained CNNs with PyTorch specifically for mobile applications and web applications
-    
--   Trained CNNs using a custom architecture and alternatively using transfer learning with pre-trained PyTorch models 
-    
--   Model conversion from PyTorch to ONNX to Tensorflow to Tensorflow Lite for use in mobile applications, Unity3d and Android
-    
--   Development of a REST API by using Flask.
-    
--   PyTorch Model deployment to a web app Heroku
-    
--   Converted PyTorch model deployment to Unity3d and Android
-    
--   Combination of Deep Learning and Augmented Reality (AR) in an Android app. Deep Learning determines the kind of visual AR content.
-    
--   Sharing of the AR camera feed with other APIs to be able to input the AR camera feed to the CNN, rendering on the OpenGL thread
+- Trained CNNs with PyTorch specifically for mobile applications and web applications
 
+- Trained CNNs using a custom architecture and alternatively using transfer learning with pre-trained PyTorch models
+
+- Model conversion from PyTorch to ONNX to Tensorflow for use in mobile applications, Unity3d and Android
+
+- Development of a REST API by using Flask.
+
+- PyTorch Model deployment to a web app Heroku
+
+- Deployment of a converted PyTorch model to Unity3d and to Android
+
+- Combination of Deep Learning and Augmented Reality (AR) in an Android app. Deep Learning determines the kind of visual AR content.
+
+- Sharing of the AR camera feed with other APIs to be able to input the AR camera feed to the CNN, rendering on the OpenGL thread
 
 
 **Data Description:**
@@ -210,8 +206,7 @@ The conversion chain is as follows: PyTorch → ONNX → Tensorflow -.pb
 We also tried the recently released Inference Engine by Unity3d with the Unity3d Barracuda backend from the ML Agents Toolkit.
 Due to incompatibility issues concerning the Tensorflow versions as well as our models’ architectures with Barracuda, we dropped the app development in Unity3d, the issues led to crashes of Unity (as of August 2019). 
 
-We switched to the development in Android (Java) with Tensorflow Lite and ARCore. 
-The conversion chain for use in Android is as follows: PyTorch → ONNX → Tensorflow -.pb  → Tensorflow Lite. The conversion to Tensorflow Lite reduced the model size by 66% to only 33% of the model size. 
+We switched to the development in Android (Java) with Tensorflow Lite and ARCore. The conversion to Tensorflow Lite reduced the model size by approx. 66% to only 33% of the model size. 
 
 An alternative conversion would be PyTorch to Caffe2 for use in Android (but the team's knowledge of C++ has become a bit too rusty) or the conversion from Keras to Tensorflow Lite (which we tried for the Android app, too, as this is a quite straight forward approach.)
 ![conversionPytorchOnnx](https://user-images.githubusercontent.com/23194592/64959293-22f74a00-d891-11e9-9d4f-b3600d30042b.png)
