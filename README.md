@@ -66,7 +66,7 @@ Since ARcore is only supported by a small number of Android devices, we also dep
 4.  3d models or graphics, artistic content: In social media apps like Instagram and Facebook, this could be used to suggest emojis, avatars, artistic visual content which suit the detected facial expression, so that the user can take a selfie or videos with superimposed emojis, avatars and/ or artistic visuals as AR filter. 
 We took a look at Spark AR, but unfortunately have not yet found a function/ method to access the CameraTexture by code in order to send these camera images via a web request to our inference tool that would return the PyTorch model prediction to a Spark AR application. 
 
-![Android-drafts](https://user-images.githubusercontent.com/23194592/63307737-c5062f80-c2ef-11e9-8cc6-d878bf6bd1b4.jpg)
+![Android-drafts](https://user-images.githubusercontent.com/23194592/64972151-15e65500-d8a9-11e9-8d9a-b0d6503cfb17.jpg)
 
 
 
