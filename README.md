@@ -234,7 +234,7 @@ to name but one
 
 To overlay and to place virtual 3d content with ARCore, ARPoint Clouds and ARPlanes are currently used. Learn about a better approach in the last section “Next steps. How to improve the project”
 
-![images/app-android-aranchor.png](images/app-android-aranchor.png)
+![app-android-aranchor](https://user-images.githubusercontent.com/23194592/64958185-cbf07580-d88e-11e9-9cb1-786594a0a507.png)
 
 
 **About the web app project:**
