@@ -77,12 +77,11 @@ Our -.apk Android app file is too big for the GitHub repo. Thus, we had to split
 4.  Both files have to be in same directory
 5.  Then, open part 1 and unpack
 6.  Allow installations of “unknown sources” in the Settings. 
-7. Check if your device supports ARCore. A list of ARCore supported devices: https://developers.google.com/ar/discover/supported-devices
-8. Install the ARCore package from Google Play
-9. Open the EmoAR app, grant camera access 
-10. Slowly move the camera and gather ARPlanes (white grids) and AR feature points (cyan blue points). Pay attention to an evenly lit environment and avoid reflections on surfaces. 
-11. Then, point the camera to a face, slowly move it around the face and wait until a virtual 3d arrow is positioned near the face. Alternatively, you may also tap on a feature point to place that arrow manually. 
-12. After a few moments, the recognized facial expression should appear as texture on the 3d arrow and change according to the model result. It may take a bit time until the new texture is rendered.
+7. Install the ARCore package from Google Play
+8. Open the EmoAR app, grant camera access 
+9. Slowly move the camera and gather ARPlanes (white grids) and AR feature points (cyan blue points). Pay attention to an evenly lit environment and avoid reflections on surfaces. 
+10. Then, point the camera to a face, slowly move it around the face and wait until a virtual 3d arrow is positioned near the face. Alternatively, you may also tap on a feature point to place that arrow manually. 
+11. After a few moments, the recognized facial expression should appear as texture on the 3d arrow and change according to the model result. It may take a bit time until the new texture is rendered.
 
 **Demo video below:** [https://youtu.be/R7-69Vf8r_4?t=120]
 
